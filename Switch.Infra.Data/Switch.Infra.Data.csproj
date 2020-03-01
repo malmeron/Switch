@@ -5,12 +5,31 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200212121002_AdicionandoUsuarioConfiguration.cs" />
+    <Compile Remove="Migrations\20200212121002_AdicionandoUsuarioConfiguration.Designer.cs" />
+    <Compile Remove="Migrations\20200212220023_NovosCamposUsuario.cs" />
+    <Compile Remove="Migrations\20200212220023_NovosCamposUsuario.Designer.cs" />
+    <Compile Remove="Migrations\20200212231352_AddIdentificacao.cs" />
+    <Compile Remove="Migrations\20200212231352_AddIdentificacao.Designer.cs" />
+    <Compile Remove="Migrations\20200212232728_AddPostagem.cs" />
+    <Compile Remove="Migrations\20200212232728_AddPostagem.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="3.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Switch.Domain\Switch.Domain.csproj" />
   </ItemGroup>
 
 </Project>
